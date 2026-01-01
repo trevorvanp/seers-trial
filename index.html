@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seer’s Trial</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="bg"></div>
+
+  <header class="hud">
+    <div class="hud-title">ᚠ Seer’s Trial</div>
+    <div class="hud-stats" id="hudStats">Runes: 0/9 · Favor: 0 · Name: Traveler</div>
+    <div class="hud-actions">
+      <button id="btnRestart">Restart</button>
+      <button id="btnSave">Save</button>
+      <button id="btnLoad">Load</button>
+    </div>
+  </header>
+
+  <main class="frame">
+    <section class="card">
+      <div id="screenTitle" class="screen-title">Loading…</div>
+      <div id="output" class="output"></div>
+
+      <div id="inputWrap" class="input-wrap hidden">
+        <input id="nameInput" type="text" placeholder="Type your name..." />
+        <button id="nameConfirm">Continue</button>
+      </div>
+
+      <div id="choices" class="choices"></div>
+    </section>
+  </main>
+
+  <!-- inkjs runtime via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/inkjs@2.3.2/dist/ink.js"></script>  <!-- :contentReference[oaicite:5]{index=5} -->
+  <script src="app.js"></script>
+</body>
+</html>
