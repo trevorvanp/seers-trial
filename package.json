@@ -1,0 +1,22 @@
+{
+  "name": "seers-trial",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "ink:compile": "inkjs-compiler story/main.ink -o public/story.json",
+    "dev": "npm run ink:compile && vite",
+    "build": "npm run ink:compile && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.89.0",
+    "inkjs": "^2.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  }
+}
